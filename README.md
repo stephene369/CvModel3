@@ -1,18 +1,17 @@
-# Mon Projet
+# My Project
 
-Ce projet contient plusieurs fichiers, y compris un CV au format PDF.
+This project contains several files, including a CV in PDF format.
 
-## Fichiers du projet
+## Project Files
 
-- `app.js`: Fichier principal de l'application.
-- `index.html`: Page d'accueil.
-- `style.css`: Fichier de styles.
-- `update.sh`: Script de mise à jour.
-- **[CV.pdf](cv.pdf)**: Mon CV au format PDF.
+- `app.js`: Main application file.
+- `index.html`: Home page.
+- `style.css`: Styles file.
+- `update.sh`: Update script.
+- **[CV.pdf](cv.pdf)**: My CV in PDF format.
 
-## Comment utiliser ce projet
+## How to use this project
 
-1. Clonez le dépôt.
-2. Ouvrez `index.html` dans votre navigateur.
-3. Pour voir mon CV, cliquez sur le lien ci-dessus.
-
+1. Clone the repository.
+2. Open `index.html` in your browser.
+3. To view my CV, click on the link above.
