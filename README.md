@@ -9,7 +9,7 @@ This project contains several files, including a CV in PDF format.
 - `style.css`: Styles file.
 - `update.sh`: Update script.
 - **[CV.pdf](cv.pdf)**: My CV in PDF format.
-- **[CV.png](cv.png)**: My CV in PNG format.
+- ![CV](cv.png)
 
 ## How to use this project
 
