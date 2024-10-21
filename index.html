@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVCraft-3</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.3/Sortable.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/pell/dist/pell.min.css">
+    <script src="https://unpkg.com/pell/dist/pell.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <main id="resume">
+        <section id="head">
+            <div class="name" onclick="makeEditable(this , 'span')">
+                <span>yourname</span>
+                <input type="text" style="display: none;" onblur="updateEdit(this)">
+            </div>
+
+            <div class="informations">
+
+                <div id="infos" class="infos">
+                    <div class="info" onclick="makeEditable(this , 'span')">
+                        <i class='bx bx-envelope'></i>
+                        <span>email.com</span>
+                        <input type="text" style="display: none;" onblur="updateEdit(this)">
+                    </div>
+
+                </div>
+
+
+                <div class="dropdownContact">
+                    <i class='bx bx-list-plus dropContactBtn' onclick="dropdownContact()"></i>
+                    <div id="contactList" class="contactList">
+                        <span onclick="createContactElement('phone', '+2290000000')"><i
+                                class='bx bx-phone'></i>Phone</span>
+                        <span onclick="createContactElement('linkedin', 'linkedin')"><i class='bx bxl-linkedin'></i>
+                            LinkedIn</span>
+                        <span onclick="createContactElement('github', 'github')"><i class='bx bxl-github'></i>
+                            GitHub</span>
+                        <span onclick="createContactElement('portfolio', 'Portfolio.com')"><i
+                                class='bx bx-code-block'></i> Portfolio</span>
+                        <span onclick="createContactElement('location', 'Contry - City')"><i
+                                class='bx bx-location-plus'></i> Location</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <span class="line"></span>
+
+        <section>
+            <div class="section-title">
+                <i class='bx bx-grid-vertical'></i>
+                <h3 class="title">TECHNICAL SKILLS </h3>
+                <i class='bx bx-plus' onclick="addSkills()"></i>
+            </div>
+            <div class="details" id="skills">
+            </div>
+
+        </section>
+
+
+        <section>
+            <div class="section-title">
+                <i class='bx bx-grid-vertical'></i>
+                <h3 class="title">WORKS EXPERIENCES</h3>
+                <i class='bx bx-plus' onclick="addExperience()"></i>
+            </div>
+            <div class="details" id="experiences">
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <i class='bx bx-grid-vertical'></i>
+                <h3 class="title">EDUCATION</h3>
+                <i class='bx bx-plus' onclick="addEducation()"></i>
+            </div>
+
+            <div class="details" id="education">
+
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <div class="section-title">
+                <i class='bx bx-grid-vertical'></i>
+                <h3 class="title" contenteditable="true">INTERESTS</h3>
+                <i class='bx bx-plus' onclick="addInterest()"></i>
+
+            </div>
+            <div class="details" id="interests">
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <button id="downloadBtn" style="position: fixed; top: 20px; right: 20px; background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Download</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+
+</body>
+<script src="app.js"></script>
+
+
+</html>
