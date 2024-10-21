@@ -10,6 +10,8 @@ This project contains several files, including a CV in PDF format.
 - `update.sh`: Update script.
 - **[CV.pdf](cv.pdf)**: My CV in PDF format.
 - ![CV](cv.png)
+- ![CV](cv.pdf)
+
 
 ## How to use this project
 
